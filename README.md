@@ -1,72 +1,76 @@
-# Base de Conhecimento de Linguagens de Programação
-## Aviso
-Este repositório é apenas para exibição e avaliação. Todos os direitos reservados; sem contribuições.
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![Deploy](https://img.shields.io/badge/deploy-vercel-black)
+## ✨ BASE DE CONHECIMENTO DEV
 
-## Visão geral
-**Base de Conhecimento de Linguagens de Programação** é uma aplicação web responsiva que organiza e apresenta informações sobre linguagens e tecnologias em um catálogo pesquisável.
-Permite busca com autocomplete, filtragem por facetas, ordenação e visualização em cards com link para documentação oficial. Ideal para consultas rápidas, estudos e demonstração de padrões de UI/UX.
+-----
 
-## Funcionalidades
-- **Busca com autocomplete** para termos e linguagens.  
-- **Filtragem por facetas** (tags, paradigma, ecossistema, ano) via painel de filtros avançados.  
-- **Chips de filtros ativos** e resumo compacto dos filtros aplicados.  
-- **Ordenação** por nome, ano e relevância.  
-- **Cards de linguagem** com ano, descrição curta e link para documentação.  
-- **Design responsivo** com drawer de filtros no mobile e painel lateral no desktop.  
-- **Acessibilidade**: navegação por teclado, labels ARIA e contraste adequado para tema escuro.  
-- **Resumo de filtros** e botão **Limpar filtros**.
+## 💡 Visão Geral
 
-## Tecnologias
-**Frontend:** React; TypeScript  
-**Estilização:** Tailwind CSS ou SASS  
-**Componentes UI:** Material UI ou Ant Design  
-**Estado e busca:** React Query ou Context API  
-**Deploy:** Vercel ou Netlify
+A **Base de Conhecimento Dev** é uma aplicação web interativa projetada para ser um catálogo moderno e responsivo de linguagens de programação e tecnologias. O objetivo é permitir que o usuário explore, filtre e ordene dados de forma rápida, simulando uma ferramenta de busca em uma base de dados real.
 
-## Instalação
-**Clonar e rodar localmente**
+Este projeto foca em demonstrar excelência em **Front-end puro** (HTML, CSS, JavaScript e IA), garantindo alta performance e usabilidade.
+
+| Status | 🟢 Completo |
+| :--- | :--- |
+| Versão | 1.0 |
+| Deploy | [Acesse a Aplicação Publicada Aqui](https://www.google.com/search?q=https://%5BSeu-Usuario%5D.github.io/%5BNome-do-Repositorio%5D/) (Insira seu link) |
+
+-----
+
+## 🛠️ Stack Tecnológica
+
+O projeto foi desenvolvido usando o *core* das tecnologias web, garantindo leveza e portabilidade.
+
+| Categoria       | Tecnologia | Uso Principal |
+|   :---          | :---               | :---                               |
+| **Estrutura**   | HTML5              | Organização semântica do conteúdo. |
+| **Estilização** | CSS3               | Dark Mode, Design Responsivo, e Animações (`@keyframes` para *splash screen*). |
+| **Lógica**      | JavaScript (ES6+)  | Filtragem, Ordenação, Paginação e controle da interface (incluindo o *debounce* na busca). |
+| **Dados**       | JSON               | Armazenamento de dados simulando uma API (`data.json`). |
+| **IA**          | GOOGLE             | Utilizado para aprimorar recursos do projeto |
+
+-----
+
+## 🌟 Funcionalidades em Destaque
+
+| Funcionalidade | Descrição |
+| :--- | :--- |
+| **Design Responsivo** | Adapta-se perfeitamente a dispositivos móveis e desktops, com *media queries* otimizadas. |
+| **Busca Interativa** | Filtro em **tempo real** por nome e descrição com **debounce** (otimização de performance). |
+| **Filtros e Ordenação** | Filtragem por **Tags dinâmicas** e ordenação por **Nome** ou **Ano de Lançamento**. |
+| **Splash Screen** | Tela de abertura animada com logos flutuantes das linguagens (padrão de apps modernos). |
+| **Paginação** | Gerenciamento de grandes volumes de dados, limitando a exibição a **9 itens por página**. |
+
+-----
+
+## ⚙️ Como Rodar Localmente
+
+Siga estes passos para ter uma cópia local do projeto em execução:
+
+### 1\. Clonagem
+
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-npm install
-npm run dev
+git clone https://github.com/MarcioTr11/Nome-do-Seu-Repositorio.git
+cd Nome-do-Seu-Repositorio
 ```
 
-**Build para produção**
-```bash
-npm run build
-npm run start
-```
+### 2\. Execução
 
-**Testes**
-```bash
-npm run test
-```
+1.  **Abra o VS Code** na pasta clonada.
+2.  Instale a extensão **Live Server** (recomendado).
+3.  Clique com o botão direito no `index.html` e selecione **Open with Live Server**.
 
-## Estrutura sugerida
-```
-/src
-  /components    # Search, FiltersDrawer, LanguageCard, Header
-  /pages         # rotas e páginas
-  /data          # seed ou mock de linguagens
-  /styles        # tokens e temas
+Seu projeto será aberto no navegador, rodando com o servidor local.
 
-## Guia de design resumido
-**Layout Desktop**  
-- Header com logo e campo de busca centralizado.  
-- Painel lateral com facetas colapsáveis.  
-- Área principal com barra de ordenação e grid de cards.  
-- Chips ativos acima do grid com botão Limpar.
+-----
 
-**Layout Mobile**  
-- Header compacto com campo de busca.  
-- Botão fixo **Filtrar** que abre um drawer full-screen.  
-- Grid em 1 coluna; cards com CTA claro para documentação.
+## 👤 Autor
 
-**Comportamento dos filtros**  
-- Exibir **apenas chips ativos** no topo; filtros adicionais ficam em painel.  
-- Filtros leves aplicam em tempo real; filtros custosos usam botão **Aplicar**.  
-- Mostrar contadores de resultados por filtro.  
-- Oferecer scroll horizontal para chips quando necessário.
+  * **[Marcio Travain / MarcioTr11]**
+  * **GitHub:** [@MarcioTr11](https://github.com/MarcioTr11)
 
+-----
+
+## 🔗 Referências e agradecimentos
+
+  * **Imersão:** Alura
+  * **Logos:** Simple Icons
+  * **Imagens:** Unsplash
