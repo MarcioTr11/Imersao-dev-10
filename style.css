@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"); /* Fonte mais moderna e profissional */
+
+* {
+  box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+}
+
+:root {
+  --primary-color: #61dafb; /* Cor primária (azul vibrante) */
+  --text-primary: #f0f0f0; /* Cor principal do texto (branco suave) */
+  --text-secondary: #a0a0a0; /* Cor secundária do texto (cinza claro) */
+  --bg-color: #1a1a1a; /* Cor de fundo (preto suave) */
+  --surface-color: #2c2c2c; /* Cor de superfície para cards e inputs */
+  --border-color: #3c4043; /* Cor para bordas sutis */
+}
+
+body {
+  margin: 0; /* Remove a margem padrão do body */
+  background: var(--bg-color);
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif; /* Nova fonte */
+  display: flex; /* Habilita flexbox para o layout principal */
+  flex-direction: column; /* Organiza os filhos (header, main, footer) em coluna */
+  min-height: 100vh; /* Garante que o body ocupe pelo menos a altura total da tela */
+}
+
+header {
+  padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
+  display: flex; /* Habilita o layout flexbox */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Espaça entre o título e a busca */
+  flex-wrap: wrap; /* Permite que os itens quebrem em telas menores */
+  position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
+  top: 0; /* Posição do topo quando sticky */
+  background: var(--bg-color); /* Cor de fundo do cabeçalho */
+  z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
+  border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
+  gap: 1rem; /* Espaçamento entre os elementos flex */
+}
+
+.header-title-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem; /* Tamanho da fonte */
+  margin: 0; /* Remove a margem padrão */
+  font-weight: 600; /* Peso da fonte (semi-bold) */
+  white-space: nowrap; /* Impede a quebra de linha do texto */
+}
+
+#back-to-home-btn {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding-bottom: 4px; /* Ajuste para centralizar o caractere '‹' */
+}
+
+#back-to-home-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  padding: 0.375rem 0.75rem; /* Espaçamento interno */
+  border-radius: 1rem; /* Arredonda as bordas */
+  border: 1px solid var(--border-color); /* Define a borda */
+  background: var(--surface-color); /* Cor de fundo */
+  font-family: inherit; /* Herda a família da fonte do elemento pai */
+  font-size: 1.5rem; /* Tamanho da fonte */
+  transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
+  width: 30rem; /* Largura do input */
+  color: var(--text-primary); /* Cor do texto digitado */
+  margin-right: 0.5rem; /* Margem à direita */
+}
+
+.search-form input::placeholder {
+  font-size: 1.2rem; /* Tamanho da fonte do placeholder */
+  font-weight: 300; /* Peso da fonte do placeholder */
+  color: var(--text-secondary); /* Cor do texto do placeholder */
+}
+
+.search-form input:focus {
+  outline: none; /* Remove a borda de foco padrão */
+  border-color: var(--primary-color); /* Muda a cor da borda ao focar */
+  box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa para indicar foco */
+}
+
+#botao-busca {
+  padding: 1rem 2rem; /* Espaçamento interno */
+  border-radius: 1rem; /* Arredonda as bordas */
+  border: none; /* Remove a borda padrão */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+  font-family: inherit; /* Herda a família da fonte */
+  font-weight: 500; /* Peso da fonte */
+  font-size: 1rem; /* Tamanho da fonte */
+  white-space: nowrap; /* Impede a quebra de linha do texto */
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease; /* Transição suave */
+  background-color: var(--primary-color); /* Cor de fundo */
+  color: var(--bg-color); /* Cor do texto */
+  border: 1px solid var(--primary-color); /* Adiciona uma borda */
+}
+
+#botao-busca:hover {
+  background-color: transparent; /* Muda a cor de fundo ao passar o mouse */
+  color: var(--primary-color); /* Muda a cor do texto ao passar o mouse */
+  box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa */
+}
+
+#botao-busca:active {
+  transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
+}
+
+main {
+  flex-grow: 1; /* Faz o main ocupar o espaço restante */
+  max-width: 80rem; /* Largura máxima do conteúdo principal */
+  width: 100%; /* Garante que o main ocupe a largura disponível */
+  margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
+  padding: 2rem 1rem; /* Adiciona espaçamento interno */
+}
+
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.filter-group {
+  flex-grow: 1;
+}
+
+#sort-select,
+#tag-select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 100%;
+  min-width: 180px;
+}
+
+/* Estilo para dar destaque ao contador de resultados */
+#results-counter {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 2rem; /* Aumenta o espaço antes dos cards */
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+article {
+  background: var(--surface-color); /* Cor de fundo para o card */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 1.5rem; /* Espaçamento interno */
+  margin-bottom: 1.25rem; /* Margem inferior */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave */
+  border: 1px solid var(--border-color); /* Borda sutil */
+}
+
+article:hover {
+  transform: translateY(-4px); /* Efeito de elevação */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+  cursor: pointer; /* Muda o cursor para uma mão */
+}
+
+article h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0; /* Remove a margem superior */
+  font-weight: 700; /* Peso da fonte (bold) */
+  font-size: 1.6rem; /* Tamanho da fonte */
+  border-bottom: none; /* Sem borda inferior */
+  padding-bottom: 0; /* Sem espaçamento interno inferior */
+  margin-bottom: 0.25rem; /* Margem inferior */
+  color: var(--primary-color); /* Cor do texto */
+  display: flex;
+  align-items: center;
+}
+
+.card-logo {
+  width: 28px;
+  height: 28px;
+}
+
+.monochrome-logo {
+  filter: invert(84%) sepia(34%) saturate(6339%) hue-rotate(159deg)
+    brightness(101%) contrast(98%);
+}
+
+article p {
+  margin: 0.5rem 0; /* Margem superior e inferior */
+  line-height: 1.6; /* Altura da linha para melhor legibilidade */
+  font-size: 1rem; /* Tamanho da fonte */
+  margin-bottom: 0.5rem; /* Margem inferior */
+  color: var(--text-primary); /* Cor do texto */
+}
+
+article p strong {
+  color: var(--text-secondary); /* Cor do texto em negrito */
+  font-weight: 500; /* Peso da fonte */
+}
+
+article a {
+  color: var(--primary-color); /* Cor do link */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  font-weight: 200; /* Peso da fonte */
+}
+
+article a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.external-link-icon {
+  display: inline-block;
+  transform: translateY(-2px);
+  font-size: 1.1em;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.card-tag {
+  background-color: #3c4043; /* Cor de fundo com melhor contraste */
+  color: #e8eaed; /* Cor de texto mais clara */
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card-tag:hover {
+  background-color: #4a4e52;
+}
+
+/* --- ESTILOS ADICIONADOS PARA A BUSCA IA --- */
+
+.info-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  padding: 3rem 1rem;
+}
+
+.info-message.error {
+  color: #ff8a80; /* Um tom de vermelho para destacar o erro */
+  font-weight: 500;
+}
+
+.card-ia {
+  border-color: var(--primary-color);
+  background-color: #222; /* Um fundo um pouco diferente para destacar */
+}
+
+.card-ia p {
+  white-space: pre-wrap; /* Preserva quebras de linha e espaços da resposta da IA */
+  line-height: 1.7;
+}
+
+/* --- ESTILOS PARA PAGINAÇÃO --- */
+
+#pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
+
+.pagination-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-color: var(--primary-color);
+}
+
+.pagination-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.page-info {
+  color: var(--text-secondary);
+}
+
+footer {
+  width: 100%; /* Largura total */
+  color: var(--text-secondary); /* Cor do texto */
+  background-color: var(--bg-color); /* Cor de fundo */
+  padding: 1rem 2rem; /* Espaçamento interno */
+  border-top: 1px solid var(--border-color); /* Borda superior */
+  font-size: 0.8rem; /* Tamanho da fonte */
+}
+
+footer ul {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Habilita o layout flexbox */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 1.5rem; /* Espaçamento entre os links */
+}
+
+footer a {
+  color: var(--text-secondary); /* Cor do link */
+  text-decoration: none; /* Remove o sublinhado */
+  transition: color 0.2s ease; /* Transição suave para a cor */
+}
+
+footer a:hover {
+  color: var(--primary-color); /* Muda a cor do link ao passar o mouse */
+}
+
+/* --- ESTILOS PARA TELA DE ABERTURA (SPLASH SCREEN) --- */
+
+.hidden {
+  display: none !important;
+}
+
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+.splash-content {
+  position: relative; /* Necessário para que o z-index funcione corretamente */
+  z-index: 1; /* Garante que o conteúdo fique acima dos logos */
+}
+
+.splash-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 20px rgba(var(--primary-color), 0.5);
+}
+
+.splash-content h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.splash-content p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+}
+
+#start-btn {
+  /* Reutiliza o estilo do botão de busca, mas maior */
+  padding: 1.2rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  /* Herda o resto de #botao-busca */
+}
+
+/* --- BOTÃO VOLTAR AO TOPO --- */
+#back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  z-index: 100;
+}
+#back-to-top-btn:hover {
+  transform: scale(1.1);
+}
+
+/* --- ANIMAÇÕES --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#main-content.fade-in-content {
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* --- ESTILOS PARA LOGOS FLUTUANTES NA SPLASH SCREEN --- */
+.floating-logos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-logo {
+  position: absolute;
+  opacity: 0.3; /* Opacidade ajustada para maior visibilidade */
+  animation: floatAnimation infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    /* Movimento aleatório para diferentes direções */
+    transform: translate(
+      calc(var(--randomX, 1) * 20px),
+      calc(var(--randomY, 1) * 30px)
+    );
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    /* Estilos para telas com largura máxima de 768px */
+    flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
+    padding: 1rem; /* Reduz o espaçamento interno */
+    gap: 1rem;
+  }
+
+  header h1 {
+    /* Estilos para o h1 no cabeçalho em telas menores */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 1rem; /* Adiciona margem inferior */
+  }
+
+  .search-form input {
+    /* Estilos para o input em telas menores */
+    width: 90vw; /* Largura baseada na largura da viewport */
+    font-size: 1.2rem; /* Reduz o tamanho da fonte */
+  }
+
+  main {
+    padding: 0 1rem; /* Adiciona espaçamento lateral */
+    transform: none; /* Remove o efeito de escala ao passar o mouse */
+  }
+
+  .splash-content h1 {
+    font-size: 2rem;
+  }
+
+  .splash-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    /* Estilos para o h1 em telas com largura máxima de 480px */
+    font-size: 1rem; /* Reduz ainda mais o tamanho da fonte */
+    max-width: 70%; /* Define uma largura máxima */
+    word-wrap: break-word; /* Permite a quebra de palavras longas */
+  }
+
+  .search-form input, /* Estilos para o input e seu placeholder em telas muito pequenas */
+    .search-form input::placeholder {
+    font-size: 1rem; /* Reduz o tamanho da fonte */
+  }
+
+  article h2 {
+    /* Estilos para o h2 do article em telas muito pequenas */
+    font-size: 1.3rem; /* Reduz o tamanho da fonte */
+  }
+
+  .search-form {
+    /* Estilos para a div do cabeçalho em telas muito pequenas */
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Alinha itens ao centro */
+    justify-content: center; /* Centraliza itens */
+    flex-direction: column; /* Organiza em coluna */
+    gap: 0.5rem; /* Espaçamento entre os itens */
+  }
+
+  #botao-busca {
+    /* Estilos para o botão em telas muito pequenas */
+    margin-top: 1rem; /* Adiciona margem no topo */
+  }
+}

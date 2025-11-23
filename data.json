@@ -1,0 +1,441 @@
+[
+  {
+    "nome": "Javascript",
+    "descrição": "JavaScript é uma linguagem de programação de alto nível, mais conhecida como a linguagem de script para páginas Web.",
+    "ano": 1995,
+    "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg",
+    "tipo": "Interpretada (JIT)",
+    "paradigma": "Orientada a eventos, Funcional, Imperativa",
+    "tags": ["web", "frontend", "backend", "mobile"]
+  },
+  {
+    "nome": "Python",
+    "descrição": "Python é uma linguagem versátil de alto nível, famosa por sua sintaxe limpa. É amplamente utilizada em desenvolvimento web, ciência de dados, automação e IA.",
+    "ano": 1991,
+    "link": "https://docs.python.org/pt-br/3",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg",
+    "tipo": "Interpretada",
+    "paradigma": "Orientada a objetos, Imperativa, Funcional",
+    "tags": ["data-science", "web", "backend", "ia", "automação"]
+  },
+  {
+    "nome": "Java",
+    "descrição": "Java é uma linguagem de programação versátil e orientada a objetos, amplamente utilizada para desenvolvimento de aplicações corporativas, web e mobile (Android).",
+    "ano": 1995,
+    "link": "https://docs.oracle.com/en/java/",
+    "logo": "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+    "tipo": "Híbrida (Compilada e Interpretada)",
+    "paradigma": "Orientada a objetos",
+    "tags": ["backend", "mobile", "enterprise"]
+  },
+  {
+    "nome": "C#",
+    "descrição": "C# (C Sharp) é uma linguagem moderna, orientada a objetos e desenvolvida pela Microsoft, principalmente para o ecossistema .NET.",
+    "ano": 2000,
+    "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/csharp.svg",
+    "tipo": "Compilada",
+    "paradigma": "Orientada a objetos, Funcional",
+    "tags": ["backend", "jogos", "enterprise", "windows"]
+  },
+  {
+    "nome": "TypeScript",
+    "descrição": "TypeScript é um superset do JavaScript que adiciona tipagem estática opcional à linguagem, melhorando a escalabilidade e a manutenção de grandes projetos.",
+    "ano": 2012,
+    "link": "https://www.typescriptlang.org/docs/",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg",
+    "tipo": "Transpilada",
+    "paradigma": "Orientada a objetos, Funcional, Imperativa",
+    "tags": ["web", "frontend", "backend"]
+  },
+  {
+    "nome": "Go",
+    "descrição": "Go (ou Golang) é uma linguagem de programação compilada e concorrente, criada pelo Google, focada em simplicidade e eficiência.",
+    "ano": 2009,
+    "link": "https://go.dev/doc/",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/go.svg",
+    "tipo": "Compilada",
+    "paradigma": "Concorrente, Imperativa",
+    "tags": ["backend", "sistemas", "cloud"]
+  },
+  {
+    "nome": "Rust",
+    "descrição": "Rust é uma linguagem de programação de sistemas focada em segurança, concorrência e desempenho.",
+    "ano": 2010,
+    "link": "https://www.rust-lang.org/pt-BR/learn",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/rust.svg",
+    "tipo": "Compilada",
+    "paradigma": "Concorrente, Funcional, Imperativa",
+    "tags": ["sistemas", "embarcados", "backend", "webassembly"]
+  },
+  {
+    "nome": "Kotlin",
+    "descrição": "Kotlin é uma linguagem de programação moderna e pragmática para a JVM, Android e navegador, desenvolvida pela JetBrains.",
+    "ano": 2011,
+    "link": "https://kotlinlang.org/docs/home.html",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/kotlin.svg",
+    "tipo": "Compilada",
+    "paradigma": "Orientada a objetos, Funcional",
+    "tags": ["mobile", "android", "backend"]
+  },
+  {
+    "nome": "Swift",
+    "descrição": "Swift é uma linguagem de programação poderosa e intuitiva para macOS, iOS, watchOS e tvOS, criada pela Apple.",
+    "ano": 2014,
+    "link": "https://developer.apple.com/swift/",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/swift.svg",
+    "tipo": "Compilada",
+    "paradigma": "Orientada a objetos, Funcional, Imperativa",
+    "tags": ["mobile", "ios", "macos"]
+  },
+  {
+    "nome": "PHP",
+    "descrição": "PHP é uma linguagem de script de código aberto amplamente utilizada, especialmente adequada para o desenvolvimento web.",
+    "ano": 1995,
+    "link": "https://www.php.net/manual/pt_BR/",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/php.svg",
+    "tipo": "Interpretada",
+    "paradigma": "Orientada a objetos, Imperativa",
+    "tags": ["web", "backend"]
+  },
+  {
+    "nome": "Ruby",
+    "descrição": "Ruby é uma linguagem de programação dinâmica, de código aberto, com foco na simplicidade e produtividade, famosa pelo framework Ruby on Rails.",
+    "ano": 1995,
+    "link": "https://www.ruby-lang.org/pt/documentation/",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ruby.svg",
+    "tipo": "Interpretada",
+    "paradigma": "Orientada a objetos, Funcional",
+    "tags": ["web", "backend", "automação"]
+  },
+  {
+    "nome": "C++",
+    "descrição": "C++ é uma linguagem de programação de propósito geral, de alto desempenho, que influenciou muitas outras linguagens, incluindo Java e C#. É amplamente usada em jogos, sistemas embarcados e software de alta performance.",
+    "ano": 1985,
+    "link": "https://isocpp.org/get-started",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cplusplus.svg",
+    "tipo": "Compilada",
+    "paradigma": "Orientada a objetos, Procedural, Funcional",
+    "tags": ["sistemas", "jogos", "embarcados", "desktop"]
+  },
+  {
+    "nome": "SQL",
+    "descrição": "SQL (Structured Query Language) é a linguagem padrão para gerenciar e manipular bancos de dados relacionais. É essencial para qualquer profissional que trabalhe com dados.",
+    "ano": 1974,
+    "link": "https://www.w3schools.com/sql/"
+  },
+  {
+    "nome": "R",
+    "descrição": "R é uma linguagem e ambiente de software livre para computação estatística e gráficos. É amplamente utilizada por estatísticos e cientistas de dados para análise de dados.",
+    "ano": 1993,
+    "link": "https://www.r-project.org/about.html",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/r.svg",
+    "tipo": "Interpretada",
+    "paradigma": "Funcional, Orientada a objetos",
+    "tags": ["data-science", "estatística"]
+  },
+  {
+    "nome": "Scala",
+    "descrição": "Scala é uma linguagem de programação que combina programação orientada a objetos e funcional. É conhecida por sua concisão e por rodar na JVM, sendo muito usada em Big Data com o Apache Spark.",
+    "ano": 2004,
+    "link": "https://docs.scala-lang.org/",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/scala.svg",
+    "tipo": "Híbrida",
+    "paradigma": "Funcional, Orientada a objetos",
+    "tags": ["data-science", "backend", "big-data"]
+  },
+  {
+    "nome": "Dart",
+    "descrição": "Dart é uma linguagem otimizada para cliente, desenvolvida pelo Google, para criar aplicativos rápidos em qualquer plataforma. É a linguagem por trás do popular framework de UI, Flutter.",
+    "ano": 2011,
+    "link": "https://dart.dev/guides",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/dart.svg",
+    "tipo": "Compilada (AOT e JIT)",
+    "paradigma": "Orientada a objetos",
+    "tags": ["mobile", "web", "frontend", "desktop"]
+  },
+  {
+    "nome": "Lua",
+    "descrição": "Lua é uma linguagem de script poderosa, eficiente, leve e embarcável. É muito popular no desenvolvimento de jogos (e.g., Roblox, World of Warcraft) e em aplicações que necessitam de scripting.",
+    "ano": 1993,
+    "link": "https://www.lua.org/docs.html",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/lua.svg",
+    "tipo": "Interpretada",
+    "paradigma": "Procedural, Funcional",
+    "tags": ["jogos", "embarcados", "scripting"]
+  },
+  {
+    "nome": "Perl",
+    "descrição": "Perl é uma família de linguagens de programação dinâmicas e interpretadas. Foi uma das linguagens mais populares para desenvolvimento web CGI e ainda é poderosa para processamento de texto e automação.",
+    "ano": 1987,
+    "link": "https://www.perl.org/docs.html",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/perl.svg",
+    "tipo": "Interpretada",
+    "paradigma": "Procedural, Orientada a objetos",
+    "tags": ["automação", "scripting", "backend"]
+  },
+  {
+    "nome": "Haskell",
+    "descrição": "Haskell é uma linguagem de programação puramente funcional, com tipagem estática e avaliação preguiçosa. É conhecida por sua expressividade e segurança, sendo muito usada em academia e indústria para sistemas robustos.",
+    "ano": 1990,
+    "link": "https://www.haskell.org/documentation/",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/haskell.svg",
+    "tipo": "Compilada",
+    "paradigma": "Funcional (Pura)",
+    "tags": ["funcional", "sistemas", "pesquisa"]
+  },
+  {
+    "nome": "Elixir",
+    "descrição": "Elixir é uma linguagem dinâmica e funcional, projetada para construir aplicações escaláveis e de fácil manutenção. Ela roda na máquina virtual Erlang (BEAM), conhecida por sua baixa latência e tolerância a falhas.",
+    "ano": 2012,
+    "link": "https://elixir-lang.org/getting-started/introduction.html",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/elixir.svg",
+    "tipo": "Compilada (para a BEAM)",
+    "paradigma": "Funcional, Concorrente",
+    "tags": ["backend", "web", "sistemas-distribuidos"]
+  },
+  {
+    "nome": "Clojure",
+    "descrição": "Clojure é um dialeto moderno da linguagem Lisp. É uma linguagem funcional, dinâmica e que roda na JVM, CLR e JavaScript, com um forte foco em concorrência e imutabilidade.",
+    "ano": 2007,
+    "link": "https://clojure.org/guides/getting_started",
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/clojure.svg",
+    "tipo": "Compilada (para a JVM/CLR/JS)",
+    "paradigma": "Funcional, Lisp",
+    "tags": ["backend", "funcional", "data-science"]
+  },
+  {
+    "nome": "Svelte",
+    "descrição": "Framework/compilador de interface de usuário que move o trabalho reativo do navegador para a etapa de construção, gerando código Vanilla JS altamente otimizado.",
+    "ano": 2016,
+    "link": "https://svelte.dev/",
+    "tags": ["frontend", "ui", "compilador", "web"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/svelte.svg",
+    "tipo": "Framework/Compilador"
+  },
+  {
+    "nome": "Vue.js",
+    "descrição": "Framework progressivo para a construção de interfaces de usuário. É projetado para ser adaptável e fácil de integrar em projetos existentes.",
+    "ano": 2014,
+    "link": "https://vuejs.org/",
+    "tags": ["frontend", "ui", "web"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/vuedotjs.svg",
+    "paradigma": "Reativo",
+    "tipo": "Framework"
+  },
+  {
+    "nome": "Next.js",
+    "descrição": "Framework de React que permite renderização do lado do servidor (SSR) e geração de sites estáticos (SSG), otimizado para produção.",
+    "ano": 2016,
+    "link": "https://nextjs.org/",
+    "tags": ["fullstack", "framework", "ssr", "web", "react"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nextdotjs.svg",
+    "tipo": "Framework"
+  },
+  {
+    "nome": "NestJS",
+    "descrição": "Framework progressivo de Node.js para a construção de aplicativos robustos e escaláveis do lado do servidor, utilizando TypeScript e princípios de arquitetura modular.",
+    "ano": 2017,
+    "link": "https://nestjs.com/",
+    "tags": ["backend", "nodejs", "framework", "arquitetura"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nestjs.svg",
+    "paradigma": "Orientada a objetos, Funcional",
+    "tipo": "Framework"
+  },
+  {
+    "nome": "Erlang",
+    "descrição": "Linguagem de programação funcional e concorrente usada para construir sistemas distribuídos de alta disponibilidade, notoriamente utilizada em telecomunicações e infraestrutura.",
+    "ano": 1986,
+    "link": "https://www.erlang.org/",
+    "tags": ["backend", "concorrência", "funcional", "telecom"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/erlang.svg",
+    "paradigma": "Funcional, Concorrente",
+    "tipo": "Compilada"
+  },
+  {
+    "nome": "Julia",
+    "descrição": "Linguagem de programação dinâmica de alto nível projetada para atender às necessidades de computação numérica de alto desempenho e ciência de dados.",
+    "ano": 2012,
+    "link": "https://julialang.org/",
+    "tags": ["data-science", "alto-desempenho", "ia"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/julia.svg",
+    "paradigma": "Múltiplo (Imperativo, Funcional)",
+    "tipo": "JIT Compilada"
+  },
+  {
+    "nome": "Zig",
+    "descrição": "Linguagem de programação de propósito geral e para sistemas, focada em robustez, otimização e substituição moderna de C.",
+    "ano": 2016,
+    "link": "https://ziglang.org/",
+    "tags": ["sistemas", "low-level", "compilada"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/zig.svg",
+    "paradigma": "Imperativo",
+    "tipo": "Compilada"
+  },
+  {
+    "nome": "PostgreSQL",
+    "descrição": "Sistema de gerenciamento de banco de dados objeto-relacional de código aberto com forte reputação em confiabilidade e integridade de dados.",
+    "ano": 1996,
+    "link": "https://www.postgresql.org/",
+    "tags": ["banco-de-dados", "relacional", "sql"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg",
+    "tipo": "Banco de Dados"
+  },
+  {
+    "nome": "MongoDB",
+    "descrição": "Banco de dados NoSQL orientado a documentos que oferece alta disponibilidade e escalabilidade horizontal, ideal para dados não estruturados ou em rápida evolução.",
+    "ano": 2009,
+    "link": "https://www.mongodb.com/",
+    "tags": ["banco-de-dados", "nosql", "documento"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mongodb.svg",
+    "tipo": "Banco de Dados"
+  },
+  {
+    "nome": "Redis",
+    "descrição": "Estrutura de dados em memória, usada como cache, banco de dados e message broker, conhecida por sua velocidade e suporte a estruturas complexas.",
+    "ano": 2009,
+    "link": "https://redis.io/",
+    "tags": ["cache", "nosql", "in-memory", "banco-de-dados"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/redis.svg",
+    "tipo": "Data Store"
+  },
+  {
+    "nome": "Cassandra",
+    "descrição": "Banco de dados NoSQL distribuído, projetado para lidar com grandes quantidades de dados em servidores commodity, oferecendo alta disponibilidade sem ponto único de falha.",
+    "ano": 2008,
+    "link": "http://cassandra.apache.org/",
+    "tags": ["banco-de-dados", "nosql", "distribuído", "big-data"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/apachecassandra.svg",
+    "tipo": "Banco de Dados"
+  },
+  {
+    "nome": "Docker",
+    "descrição": "Plataforma de código aberto usada para desenvolver, enviar e executar aplicativos dentro de contêineres virtualizados, garantindo ambientes consistentes.",
+    "ano": 2013,
+    "link": "https://www.docker.com/",
+    "tags": ["devops", "container", "virtualização", "ferramenta"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/docker.svg",
+    "tipo": "Plataforma de Contêineres"
+  },
+  {
+    "nome": "Kubernetes (K8s)",
+    "descrição": "Sistema de orquestração de contêineres de código aberto que automatiza a implantação, dimensionamento e gerenciamento de aplicações em contêineres.",
+    "ano": 2014,
+    "link": "https://kubernetes.io/",
+    "tags": ["devops", "orquestração", "cloud", "infraestrutura"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/kubernetes.svg",
+    "tipo": "Sistema de Orquestração"
+  },
+  {
+    "nome": "Terraform",
+    "descrição": "Ferramenta de Infraestrutura como Código (IaC) que permite gerenciar e provisionar recursos de infraestrutura em nuvens públicas e privadas de forma declarativa.",
+    "ano": 2014,
+    "link": "https://www.terraform.io/",
+    "tags": ["devops", "iac", "cloud", "infraestrutura"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/terraform.svg",
+    "tipo": "Ferramenta de IaC"
+  },
+  {
+    "nome": "Git",
+    "descrição": "Sistema de controle de versão distribuído, gratuito e de código aberto, projetado para lidar com tudo, desde projetos pequenos a muito grandes, com velocidade e eficiência.",
+    "ano": 2005,
+    "link": "https://git-scm.com/",
+    "tags": ["controle-de-versao", "ferramenta", "desenvolvimento"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/git.svg",
+    "tipo": "Sistema de Controle de Versão"
+  },
+  {
+    "nome": "GraphQL",
+    "descrição": "Linguagem de consulta para APIs desenvolvida pelo Facebook, que permite aos clientes solicitar exatamente os dados de que precisam, e nada mais.",
+    "ano": 2015,
+    "link": "https://graphql.org/",
+    "tags": ["api", "query-language", "backend", "frontend"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/graphql.svg",
+    "tipo": "Linguagem de Query"
+  },
+  {
+    "nome": "GRPC",
+    "descrição": "Framework moderno de chamada de procedimento remoto (RPC) de código aberto que pode rodar em qualquer ambiente, permitindo a comunicação eficiente entre microserviços.",
+    "ano": 2015,
+    "link": "https://grpc.io/",
+    "tags": ["microserviços", "comunicação", "rpc", "alto-desempenho", "grpc"],
+    "logo": "https://www.vectorlogo.zone/logos/grpcio/grpcio-icon.svg",
+    "tipo": "Framework RPC"
+  },
+  {
+    "nome": "F#",
+    "descrição": "Linguagem de programação funcional, interoperável com o ecossistema .NET, focada em expressividade, concisão e robustez.",
+    "ano": 2005,
+    "link": "https://fsharp.org/",
+    "tags": ["funcional", ".net", "backend"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/fsharp.svg",
+    "paradigma": "Funcional",
+    "tipo": "Compilada"
+  },
+  {
+    "nome": "WebGL",
+    "descrição": "API JavaScript para renderizar gráficos 2D e 3D interativos em qualquer navegador web compatível sem a necessidade de plugins.",
+    "ano": 2011,
+    "link": "https://get.webgl.org/",
+    "tags": ["gráficos", "frontend", "api", "3d", "web"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/webgl.svg",
+    "tipo": "API Gráfica"
+  },
+  {
+    "nome": "WebAssembly (Wasm)",
+    "descrição": "Formato de instrução binária de baixo nível que é executado em navegadores modernos, oferecendo desempenho próximo ao nativo para código compilado.",
+    "ano": 2017,
+    "link": "https://webassembly.org/",
+    "tags": ["performance", "web", "compilação", "bytecode"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/webassembly.svg",
+    "tipo": "Formato Binário"
+  },
+  {
+    "nome": "RabbitMQ",
+    "descrição": "Message broker de código aberto que implementa o Advanced Message Queuing Protocol (AMQP), usado para desacoplar e escalar aplicações através de filas de mensagens.",
+    "ano": 2007,
+    "link": "https://www.rabbitmq.com/",
+    "tags": ["message-broker", "assíncrono", "middleware", "backend"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/rabbitmq.svg",
+    "tipo": "Servidor de Mensageria"
+  },
+  {
+    "nome": "Kafka",
+    "descrição": "Plataforma de streaming distribuída de eventos, projetada para lidar com grandes volumes de dados em tempo real, utilizada para pipelines de dados e microserviços.",
+    "ano": 2011,
+    "link": "https://kafka.apache.org/",
+    "tags": ["streaming", "big-data", "mensageria", "distribuído"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/apachekafka.svg",
+    "tipo": "Plataforma de Eventos"
+  },
+  {
+    "nome": "Prometheus",
+    "descrição": "Sistema de monitoramento e alerta de código aberto construído com o paradigma de puxar (pull) métricas, amplamente usado em ambientes Kubernetes e Cloud Native.",
+    "ano": 2012,
+    "link": "https://prometheus.io/",
+    "tags": ["monitoramento", "devops", "alerta", "time-series"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/prometheus.svg",
+    "tipo": "Sistema de Monitoramento"
+  },
+  {
+    "nome": "Solidity",
+    "descrição": "Linguagem de programação orientada a contrato de alto nível, usada para implementar lógica de negócios (Smart Contracts) em plataformas blockchain como Ethereum.",
+    "ano": 2014,
+    "link": "https://docs.soliditylang.org/",
+    "tags": ["blockchain", "smart-contracts", "ethereum", "web3"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/solidity.svg",
+    "paradigma": "Orientada a Contrato",
+    "tipo": "Compilada"
+  },
+  {
+    "nome": "React",
+    "descrição": "Uma biblioteca JavaScript para construir interfaces de usuário, mantida pelo Facebook e uma comunidade de desenvolvedores individuais e empresas.",
+    "ano": 2013,
+    "link": "https://react.dev/",
+    "tags": ["frontend", "ui", "web", "javascript"],
+    "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg",
+    "paradigma": "Declarativo, Baseado em Componentes",
+    "tipo": "Biblioteca UI"
+  }
+]

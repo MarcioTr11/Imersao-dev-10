@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Imersão ALURA Dev10E</title>
+  </head>
+  <body>
+    <!-- Tela de Abertura (Splash Screen) -->
+    <section id="splash-screen">
+      <!-- Container para os logos flutuantes -->
+      <div class="floating-logos">
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg"
+          alt="JavaScript Logo"
+          class="floating-logo monochrome-logo"
+          style="top: 10%; left: 25%; width: 50px; animation-duration: 15s"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg"
+          alt="Python Logo"
+          class="floating-logo monochrome-logo"
+          style="
+            top: 15%;
+            left: 85%;
+            width: 70px;
+            animation-duration: 18s;
+            animation-delay: -5s;
+          "
+        />
+        <img
+          src="https://www.vectorlogo.zone/logos/java/java-icon.svg"
+          alt="Java Logo"
+          class="floating-logo monochrome-logo"
+          style="
+            top: 70%;
+            left: 80%;
+            width: 70px;
+            animation-duration: 20s;
+            animation-delay: -2s;
+          "
+        />
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/csharp.svg"
+          alt="C# Logo"
+          class="floating-logo monochrome-logo"
+          style="
+            top: 80%;
+            left: 60%;
+            width: 50px;
+            animation-duration: 16s;
+            animation-delay: -8s;
+          "
+        />
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/go.svg"
+          alt="Go Logo"
+          class="floating-logo monochrome-logo"
+          style="
+            top: 8%;
+            left: 60%;
+            width: 65px;
+            animation-duration: 22s;
+            animation-delay: -12s;
+          "
+        />
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/rust.svg"
+          alt="Rust Logo"
+          class="floating-logo monochrome-logo"
+          style="
+            top: 40%;
+            left: 10%;
+            width: 55px;
+            animation-duration: 19s;
+            animation-delay: -3s;
+          "
+        />
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/typescript.svg"
+          alt="TypeScript Logo"
+          class="floating-logo monochrome-logo"
+          style="
+            top: 70%;
+            left: 25%;
+            width: 45px;
+            animation-duration: 14s;
+            animation-delay: -7s;
+          "
+        />
+        <img
+          src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/swift.svg"
+          alt="Swift Logo"
+          class="floating-logo monochrome-logo"
+          style="top: 50%; left: 80%; width: 60px; animation-duration: 25s"
+        />
+      </div>
+
+      <div class="splash-content">
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80"
+          alt="Código de programação em um monitor"
+          class="splash-image"
+        />
+        <h1>Bem-vindo à Base de Conhecimento Dev</h1>
+        <p>
+          Explore, busque e aprenda sobre diversas linguagens de programação.
+        </p>
+        <button id="start-btn">Iniciar</button>
+      </div>
+    </section>
+
+    <!-- Conteúdo Principal (inicialmente oculto) -->
+    <div id="main-content" class="hidden">
+      <header>
+        <div class="header-title-container">
+          <button id="back-to-home-btn" title="Voltar à tela inicial">‹</button>
+          <h1>Base de Conhecimento</h1>
+        </div>
+        <form class="search-form" role="search">
+          <input
+            type="search"
+            id="campo-busca"
+            placeholder="Digite uma linguagem ou termo..."
+            aria-label="Buscar por linguagem ou termo"
+          />
+          <button id="botao-busca">Buscar</button>
+        </form>
+      </header>
+
+      <main>
+        <div class="filters-container">
+          <div class="filter-group">
+            <select
+              id="tag-select"
+              aria-label="Filtrar por tag"
+              aria-haspopup="listbox"
+            >
+              <!-- Opções de tag serão inseridas aqui pelo JS -->
+            </select>
+          </div>
+          <div class="filter-group">
+            <select
+              id="sort-select"
+              aria-label="Ordenar resultados"
+              aria-haspopup="listbox"
+            >
+              <option value="default">Ordenar por...</option>
+              <option value="name-asc">Nome (A-Z)</option>
+              <option value="name-desc">Nome (Z-A)</option>
+              <option value="year-desc">Ano (Mais Recente)</option>
+              <option value="year-asc">Ano (Mais Antigo)</option>
+            </select>
+          </div>
+        </div>
+        <!-- Container para o contador de resultados -->
+        <div id="results-counter"></div>
+        <section class="card-container"></section>
+        <!-- Container para os controles de paginação -->
+        <div id="pagination-container"></div>
+      </main>
+
+      <footer>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/MarcioTr11"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.alura.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Alura</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top-btn" class="hidden" title="Voltar ao topo">
+      ▲
+    </button>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
