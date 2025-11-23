@@ -11,7 +11,7 @@ Este projeto foca em demonstrar excelência em **Front-end puro** (HTML, CSS, Ja
 | Status | 🟢 Completo |
 | :--- | :--- |
 | Versão | 1.0 |
-| Deploy | [Acesse a Aplicação Publicada Aqui](https://www.google.com/search?q=https://%5BSeu-Usuario%5D.github.io/%5BNome-do-Repositorio%5D/) (Insira seu link) |
+| Deploy | [Acesse a Aplicação Publicada Aqui] https://marciotr11.github.io/Imersao-dev-10/|
 
 -----
 
