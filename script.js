@@ -47,7 +47,7 @@ function inicializarApp() {
 }
 
 async function iniciarPagina() {
-  let resposta = await fetch("/data.json");
+  let resposta = await fetch("data.json");
   todosOsDados = await resposta.json();
   dadosAtuais = [...todosOsDados]; // Começa mostrando todos os dados
 
@@ -356,3 +356,4 @@ function filtrarErenderizar(termoBuscado) {
   // Agora, esta função apenas dispara a aplicação de todos os filtros
   aplicarFiltrosEOrdenacao(true);
 }
+
